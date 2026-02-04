@@ -1,8 +1,10 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',          // สำคัญมาก
+  output: 'export',
   basePath: '/chickend-farm-simulator',
-  assetPrefix: '/chickend-farm-simulator/',
+  assetPrefix: '/chickend-farm-simulator',
+  images: {
+    unoptimized: true,
+  },
 }
 
-module.exports = nextConfig
+export default nextConfig
