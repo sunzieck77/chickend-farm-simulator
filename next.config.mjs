@@ -1,11 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  images: {
-    unoptimized: true,
-  },
+  output: 'export',          // สำคัญมาก
+  basePath: '/chickend-farm-simulator',
+  assetPrefix: '/chickend-farm-simulator/',
 }
 
-export default nextConfig
+module.exports = nextConfig
